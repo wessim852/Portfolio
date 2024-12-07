@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio | Wessim</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="icon" href="/img/logo_icon.png">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+        
+    </head>
+    <body>
+        <div class="bg-lines">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        
+        <header>
+            <nav class="container">
+                <a href="#" class="logo"><img src="img/logo.png"></a>
+                <div class="links" id="links">
+                    <span class="close_menu" onclick="open_close_menu()"><i class="fa-solid fa-xmark"></i></span>
+                    <a href="#" class="logo"><img src="img/logo.png"></a>
+                    <a href="#home" class="active">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="icons">
+                    <a href="https://www.facebook.com/wessim.gueddes.56"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-github"></i></a>
+                    <span class="icon_menu" onclick="open_close_menu()"><i class="fa-solid fa-bars"></i></span>
+                </div>
+            </nav>
+
+        </header>
+        <div class="hero" id="home">
+            <div class="container">
+                <div class="div_text">
+                    <h4>Hello I'm</h4>
+                    <h1><span>Wessim Gueddes</span></h1>                    
+                </div>
+                <!--7ot feha video-->
+                <div class="div_img">
+                    <video controls autoplay loop muted>
+                        <source src="img/vid.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </div>
+
+        <section class="about" id="about">
+            <div class="container">
+                <div class="div_text">
+                    <h5>About me</h5>
+                    <h2><span>I'm a Student</span></h2>
+                    <p>1er annee en Informatique Applique a l'Eniso</p>
+                    <ul>
+                        <li><i class="fa-solid fa-check"></i>HTML</li>
+                        <li><i class="fa-solid fa-check"></i>CSS</li>
+                        <li><i class="fa-solid fa-check"></i>C/C++</li>
+                        <li><i class="fa-solid fa-check"></i>Python</li>
+                    </ul>
+                    <table>
+                        <tr>
+                            <th>Année</th>
+                            <th>Etablissement</th>
+                            
+                        </tr>
+                        <tr>
+                            <td>2024-2025</td>
+                            <td>Eniso</td>
+                        </tr>
+                        <tr>
+                            <td>2023-2024</td>
+                            <td>Ipeim</td>
+                        </tr>
+                    </table>                   
+                </div>
+                <div class="div_img">
+                    <img src="img/mm.jpg">
+                </div>
+            </div>
+        </section>
+
+        <section class="projects" id="projects">
+            <div class="container">
+                <div class="top_section">
+                    <h2>My<span>Projects</span></h2>
+                </div>
+            </div>
+            <div class="project_box">
+                <img src="img/projetsem.png">
+                <div class="text">
+                    <h4>Projet Semestriel</h4>
+                    <h3><a href="#">Restaurant Website</a></h3>
+                    <p>Dans le cadre de mon projet semestriel, j'ai développé un site web dédié aux restaurants. Ce projet a pour objectif de faciliter la découverte, la réservation et la gestion des restaurants pour les utilisateurs. Le site offre une interface intuitive permettant aux clients de consulter les menus, lire les avis, et effectuer des réservations en ligne. c'est la page 1</p>
+                    
+                    
+                    <a href="../projet sem/restaurant2 page/restaurant2.html" class="link"><i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <div class="project_box project_box_2">
+                <img src="img/page2.png">
+                <div class="text">
+                    <h4>Projet Semestriel</h4>
+                    <h3><a href="#">Restaurant Website Page 2</a></h3>
+                    <a href="../projet sem/restaurant page/restaurent.html" class="link"><i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            
+            
+        </section>
+        <!--zid form-->
+
+        <section class="contact" id="contact">
+            <div class="top_section">
+                <h2>My<span>Contacts</span></h2>
+            </div>
+            <div class="container">
+                <div class="social_contact">
+                    <h2>My Social media</h2>
+                    <div class="links">
+                        <a href="mailto:exemple@gmail.com"><i class="fa-regular fa-envelope"></i>Email</a>
+                        <a href="tel:+21601234567"><i class="fa-solid fa-phone"></i>Phone</a>
+                    </div>
+                </div>
+                <form method="post" action="https://api.sheetmonkey.io/form/axfwDqXaCSan2T7a1dg9nh">
+                    <div class="inpts_form">
+                        <input type="text" placeholder="Full Name" name="Name">
+                        <input type="text" placeholder="mobile number" name="Phone">
+                        <input type="text" placeholder="email" name="Email">
+                        <input type="text" placeholder="Subject" name="Subject">
+                        <textarea name="message" id="" rows="10" placeholder="your comment"></textarea>
+                    </div>
+                    <button type="submit" class="btn">Send message</button>
+                </form>
+            </div>
+        </section>
+        <script src="main.js"></script>
+    </body>
+</html>
